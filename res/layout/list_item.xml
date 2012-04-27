@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:padding="6dp"
-        />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <ImageView
+            android:id="@+id/imageview"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="50dp"
+            android:textSize="24dp"
+            android:padding="6dp"/>
+    <TextView
+            android:id="@+id/textview"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="50dp"
+            android:textSize="24dp"
+            android:padding="6dp"
+            />
+
+</LinearLayout>

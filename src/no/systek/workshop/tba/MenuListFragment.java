@@ -5,7 +5,7 @@ import android.app.ListFragment;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class MenuListFragment extends ListFragment {
@@ -15,16 +15,15 @@ public class MenuListFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setListAdapter(ArrayAdapter.createFromResource(getActivity()
-                .getApplicationContext(), R.array.tut_titles,
-                R.layout.list_item));
+    }
 
-
+    public void updateListData(ListAdapter data) {
+        setListAdapter(data);
     }
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
-        tutSelectedListener.onMenuItemSelected(Long.toString(id));
+        tutSelectedListener.onMenuItemSelected(Long.toString(id), position);
     }
 
     @Override

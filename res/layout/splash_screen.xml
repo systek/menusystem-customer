@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <ImageView android:background="@drawable/pub_beer"
+               android:layout_width="fill_parent"
+               android:layout_height="0dp"
+               android:layout_weight="50">
+    </ImageView>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="50"
+                  android:orientation="horizontal">
+        <Button android:id="@+id/scanButton"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="50"
+                android:textSize="46dp"
+                android:text="Scan"
+                android:padding="6dp"/>
+        <Button android:id="@+id/shortCutButton"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="50"
+                android:textSize="46dp"
+                android:text="Juks"
+                android:padding="6dp"/>
+    </LinearLayout>
+
+</LinearLayout>
